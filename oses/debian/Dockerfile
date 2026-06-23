@@ -25,7 +25,10 @@ RUN apt-get update && \
     tzdata \
 	python3 \
     python3-pip \
+	wine \
     && rm -rf /var/lib/apt/lists/*
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+RUN export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
 USER        root
 ENV         USER=root HOME=/home/container
