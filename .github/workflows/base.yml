@@ -38,4 +38,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/raphhosting/yolks:${{ matrix.oses }}
+            ghcr.io/RaphHosting/yolks:${{ matrix.oses }}
