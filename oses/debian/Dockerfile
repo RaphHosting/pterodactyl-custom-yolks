@@ -21,6 +21,7 @@ RUN apt-get update && \
     locales \
     ffmpeg \
     ca-certificates \
+	sudo \
     tzdata \
     && rm -rf /var/lib/apt/lists/*
 
