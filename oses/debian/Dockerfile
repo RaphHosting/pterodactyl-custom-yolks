@@ -23,6 +23,8 @@ RUN apt-get update && \
     ca-certificates \
 	sudo \
     tzdata \
+	python3 \
+    python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
 USER        root
